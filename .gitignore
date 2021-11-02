@@ -3,7 +3,5 @@ client_secret.json
 __pycache__/laundry.cpython-38.pyc
 __pycache__/sheets_api.cpython-38.pyc
 __pycache__/test.cpython-38.pyc
-.ipynb_checkpoints/test-checkpoint.ipynb
 .DS_Store
-test.ipynb
-test.csv
+

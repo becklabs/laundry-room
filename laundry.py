@@ -10,14 +10,11 @@ from sheets_api import MySheet
 
 class Logger:
 
-    def __init__(self, spreadsheet_id, csv_path=None):
+    def __init__(self, spreadsheet_id, csv_path='data.csv'):
 
         self.sheet = MySheet(spreadsheet_id)
         self.timestamp_queue = Queue()
         self.cached_records = []
-
-        if not csv_path:
-            csv_path = 'data.csv'
         self.csv_path = csv_path
 
         if not os.path.exists(self.csv_path):
